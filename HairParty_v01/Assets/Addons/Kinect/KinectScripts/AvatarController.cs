@@ -54,8 +54,8 @@ public class AvatarController : MonoBehaviour
 	[Tooltip("Vertical offset of the avatar to the user's spine-base.")]
 	public float verticalOffset = 0f;
 
-	// userId of the player
-	[NonSerialized]
+    // userId of the player
+    [NonSerialized]
 	public Int64 playerId = 0;
 
 
@@ -770,6 +770,10 @@ public class AvatarController : MonoBehaviour
 
 		if(groundedFeet)
 		{
+            //if(targetPos.y < initialPosition.y)
+            //{
+            //    targetPos.y = initialPosition.y;
+            //}
 			targetPos.y += (fFootDistanceInitial - fFootDistance);
 
 			float fNewDistance = GetDistanceToGround();

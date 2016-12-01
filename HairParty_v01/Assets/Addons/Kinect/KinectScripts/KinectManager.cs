@@ -2417,13 +2417,13 @@ public class KinectManager : MonoBehaviour
 			// update the avatars
 			if(!lateUpdateAvatars)
 			{
-				foreach (AvatarController controller in avatarControllers)
+                foreach (AvatarController controller in avatarControllers)
 				{
 					//int userIndex = controller ? controller.playerIndex : -1;
 					Int64 userId = controller ? controller.playerId : 0;
-					
-					//if((userIndex >= 0) && (userIndex < alUserIds.Count))
-					if(userId != 0 && dictUserIdToIndex.ContainsKey(userId))
+
+                    //if((userIndex >= 0) && (userIndex < alUserIds.Count))
+                    if (userId != 0 && dictUserIdToIndex.ContainsKey(userId))
 					{
 						//Int64 userId = alUserIds[userIndex];
 						controller.UpdateAvatar(userId);

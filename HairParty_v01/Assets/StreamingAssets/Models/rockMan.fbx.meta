@@ -1,0 +1,409 @@
+fileFormatVersion: 2
+guid: 4f761803305e62943aacf873b62a08a9
+timeCreated: 1480527085
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: partyMan:human:ANKLELEFT
+    100004: partyMan:human:ANKLERIGHT
+    100006: partyMan:human:ELBOWLEFT
+    100008: partyMan:human:ELBOWRIGHT
+    100010: partyMan:human:HANDLEFT
+    100012: partyMan:human:HANDLEFT1
+    100014: partyMan:human:HANDRIGHT
+    100016: partyMan:human:HANDTIPLEFT
+    100018: partyMan:human:HEAD
+    100020: partyMan:human:HIPLEFT
+    100022: partyMan:human:HIPRIGHT
+    100024: partyMan:human:KNEELEFT
+    100026: partyMan:human:KNEERIGHT
+    100028: partyMan:human:NECK
+    100030: partyMan:human:SHOULDERLEFT
+    100032: partyMan:human:SHOULDERRIGHT
+    100034: partyMan:human:SPINEBASE
+    100036: partyMan:human:SPINEMID
+    100038: partyMan:human:SPINESHOULDER
+    100040: partyMan:human:TOELEFT
+    100042: partyMan:human:TOERIGHT
+    100044: partyMan:human:WRISTLEFT
+    100046: partyMan:human:WRISTRIGHT
+    100048: partyMan:humanMesh
+    100050: partyMan:rig
+    400000: //RootNode
+    400002: partyMan:human:ANKLELEFT
+    400004: partyMan:human:ANKLERIGHT
+    400006: partyMan:human:ELBOWLEFT
+    400008: partyMan:human:ELBOWRIGHT
+    400010: partyMan:human:HANDLEFT
+    400012: partyMan:human:HANDLEFT1
+    400014: partyMan:human:HANDRIGHT
+    400016: partyMan:human:HANDTIPLEFT
+    400018: partyMan:human:HEAD
+    400020: partyMan:human:HIPLEFT
+    400022: partyMan:human:HIPRIGHT
+    400024: partyMan:human:KNEELEFT
+    400026: partyMan:human:KNEERIGHT
+    400028: partyMan:human:NECK
+    400030: partyMan:human:SHOULDERLEFT
+    400032: partyMan:human:SHOULDERRIGHT
+    400034: partyMan:human:SPINEBASE
+    400036: partyMan:human:SPINEMID
+    400038: partyMan:human:SPINESHOULDER
+    400040: partyMan:human:TOELEFT
+    400042: partyMan:human:TOERIGHT
+    400044: partyMan:human:WRISTLEFT
+    400046: partyMan:human:WRISTRIGHT
+    400048: partyMan:humanMesh
+    400050: partyMan:rig
+    4300000: partyMan:humanMesh
+    9500000: //RootNode
+    13700000: partyMan:humanMesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: partyMan:human:SPINEBASE
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:HIPLEFT
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:HIPRIGHT
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:KNEELEFT
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:KNEERIGHT
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:ANKLELEFT
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:ANKLERIGHT
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:SPINEMID
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:SPINESHOULDER
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:NECK
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:HEAD
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:SHOULDERLEFT
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:SHOULDERRIGHT
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:ELBOWLEFT
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:ELBOWRIGHT
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:WRISTLEFT
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:WRISTRIGHT
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:TOELEFT
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: partyMan:human:TOERIGHT
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: partyMan(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:humanMesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:rig
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:SPINEBASE
+      position: {x: -0, y: 9.453185, z: 0}
+      rotation: {x: 0.000000021855696, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:HIPLEFT
+      position: {x: -0.895565, y: 0, z: 5.293956e-23}
+      rotation: {x: 1.5067215e-25, y: 1.4164089e-25, z: 0.6849333, w: 0.7286058}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:KNEELEFT
+      position: {x: -4.2073946, y: -0.00000009489748, z: -5.293956e-23}
+      rotation: {x: 0.0006364883, y: -0.113740966, z: 0.005559542, w: 0.9934947}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:ANKLELEFT
+      position: {x: -4.3881273, y: 4.440892e-16, z: 0.000000115167545}
+      rotation: {x: 0.0000000053698157, y: -0.000000005165088, z: -0.6889997, w: 0.7247616}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:TOELEFT
+      position: {x: -0.26491714, y: -0.47053, z: 2.0664198}
+      rotation: {x: 0.99993384, y: -0.0013065792, z: -0.011426735, w: -8.8766465e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:SPINEMID
+      position: {x: -0, y: 2.5871882, z: 0}
+      rotation: {x: 2.485242e-24, y: -2.485242e-24, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:SPINESHOULDER
+      position: {x: -2.8039598, y: 0.19533704, z: -0.6294386}
+      rotation: {x: 0.111107245, y: -0.10146476, z: 0.7300158, w: 0.6666611}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:SHOULDERLEFT
+      position: {x: -2.2835393, y: -0.06493721, z: 0.68588835}
+      rotation: {x: -0.0016953421, y: 0.11890307, z: -0.007166681, w: 0.9928786}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:ELBOWLEFT
+      position: {x: -2.5654776, y: 0.10693807, z: -0.014820985}
+      rotation: {x: 0.00629142, y: 0.068924874, z: -0.04948025, w: 0.99637413}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:WRISTLEFT
+      position: {x: -2.7337964, y: -0.000003034726, z: -0.00000029916816}
+      rotation: {x: -4.090669e-10, y: 0.0000000014721029, z: -0.038652193, w: 0.99925274}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:HANDLEFT
+      position: {x: -0.85878193, y: 0.0000000016368844, z: -0.00000012902736}
+      rotation: {x: -5.4304283e-10, y: 3.7253906e-10, z: 0.18307707, w: 0.98309857}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:HANDTIPLEFT
+      position: {x: -1.3362298, y: 0.0000014600264, z: 0.000000042959275}
+      rotation: {x: -2.2526478e-10, y: -0.000000004750525, z: -0.14494133, w: 0.98944026}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:HANDLEFT1
+      position: {x: -0.8638358, y: -0.34149736, z: 0.5800646}
+      rotation: {x: -5.529431e-18, y: 0.0000000014842954, z: 0.0000000037252903, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:NECK
+      position: {x: 0.068808265, y: 0.79278725, z: 0.21386151}
+      rotation: {x: 9.313227e-10, y: 0.000000012223611, z: -0.0000000037252907, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:HEAD
+      position: {x: 0.11181352, y: 1.2882795, z: 0.38914508}
+      rotation: {x: -9.313229e-10, y: -0.0000000026775528, z: -0.000000003725291,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:SHOULDERRIGHT
+      position: {x: 2.2204447, y: -0.49384195, z: -0.71762115}
+      rotation: {x: 0.97990626, y: -0.08257365, z: -0.18127352, w: 0.010253485}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:ELBOWRIGHT
+      position: {x: 2.5654838, y: -0.10693047, z: 0.014822435}
+      rotation: {x: 0.0062914076, y: 0.06892331, z: -0.049478613, w: 0.9963744}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:WRISTRIGHT
+      position: {x: 2.7337952, y: -0.0000045537918, z: -0.000003072863}
+      rotation: {x: 1.6761405e-10, y: 0.0000000043332293, z: -0.03865219, w: 0.99925274}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:HANDRIGHT
+      position: {x: 0.85878503, y: -0.00002733466, z: 0.0000005579335}
+      rotation: {x: -5.3720455e-11, y: 0.0000000028319982, z: 0.18307707, w: 0.98309857}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:HIPRIGHT
+      position: {x: 0.895565, y: 0, z: 5.293956e-23}
+      rotation: {x: 0.7286058, y: -0.6849333, z: -0.000000029939386, w: 0.00000003184837}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:KNEERIGHT
+      position: {x: 4.207398, y: 0.0000008540773, z: -4.525064e-14}
+      rotation: {x: 0.0006364883, y: -0.113740966, z: 0.005559542, w: 0.9934947}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:ANKLERIGHT
+      position: {x: 4.3881235, y: -0.000002372437, z: 0.00000026442243}
+      rotation: {x: 0.0000000050489755, y: -0.000000005502581, z: -0.6889997, w: 0.7247616}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: partyMan:human:TOERIGHT
+      position: {x: 0.30214357, y: 0.47048184, z: -2.0668447}
+      rotation: {x: 0.99993384, y: -0.001306591, z: -0.011426778, w: -0.000000002721463}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
