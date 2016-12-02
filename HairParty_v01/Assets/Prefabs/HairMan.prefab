@@ -297,7 +297,7 @@ GameObject:
   - 114: {fileID: 114000011532848684}
   - 114: {fileID: 114000010043202126}
   m_Layer: 0
-  m_Name: HairNew
+  m_Name: HairMan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
