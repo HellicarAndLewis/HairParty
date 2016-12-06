@@ -297,7 +297,7 @@ GameObject:
   - 114: {fileID: 114000011532848684}
   - 114: {fileID: 114000010043202126}
   m_Layer: 0
-  m_Name: HairMan
+  m_Name: HairManMed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -856,7 +856,7 @@ MonoBehaviour:
   verticalMovement: 1
   externalRootMotion: 0
   fingerOrientations: 0
-  moveRate: {x: 20, y: 50, z: 20}
+  moveRate: {x: 1, y: 1, z: 1}
   smoothFactor: 5
   offsetNode: {fileID: 0}
   posRelativeToCamera: {fileID: 0}
@@ -888,13 +888,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3752dd6155ac01f4aa1764627f5c85d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_hair_asset: UTJ/HairWorksIntegration/partyManFur_superLong.apx
+  m_hair_asset: UTJ/HairWorksIntegration/partyManFur_Med.apx
   m_hair_shader: UTJ/HairWorksIntegration/DefaultHairShader.cso
   m_root_bone: {fileID: 4000011316487782}
   m_invert_bone_x: 1
   m_params:
     m_enable: 1
-    m_width: 0.1
+    m_width: 1
     m_widthNoise: 0
     m_widthRootScale: 1
     m_widthTipScale: 0.1
@@ -913,8 +913,8 @@ MonoBehaviour:
     m_waveFreqNoise: 0.5
     m_waveRootStraighten: 0
     m_rootAlphaFalloff: 0
-    m_rootColor: {r: 0.9632353, g: 0.113321796, b: 0.113321796, a: 1}
-    m_tipColor: {r: 0.09385811, g: 0.9117647, b: 0.13334332, a: 1}
+    m_rootColor: {r: 0, g: 0, b: 0, a: 1}
+    m_tipColor: {r: 1, g: 1, b: 1, a: 1}
     m_rootTipColorWeight: 0.5
     m_rootTipColorFalloff: 1
     m_diffuseBlend: 0.5
@@ -940,7 +940,7 @@ MonoBehaviour:
     m_backStopRadius: 0
     m_bendStiffness: 0
     m_damping: 0
-    m_gravityDir: {x: 0, y: 0, z: -1}
+    m_gravityDir: {x: 0, y: 0, z: 0}
     m_friction: 0
     m_massScale: 10
     m_inertiaScale: 1
@@ -949,12 +949,12 @@ MonoBehaviour:
     m_rootStiffness: 0.5
     m_pinStiffness: 1
     m_simulate: 1
-    m_stiffness: 0
+    m_stiffness: 0.5
     m_stiffnessStrength: 1
     m_stiffnessDamping: 0
     m_tipStiffness: 0
     m_useCollision: 0
-    m_wind: {x: 0, y: -2, z: 0}
+    m_wind: {x: 0, y: 0, z: 0}
     m_windNoise: 0
     m_stiffnessCurve: {x: 1, y: 1, z: 1, w: 1}
     m_stiffnessStrengthCurve: {x: 1, y: 1, z: 1, w: 1}
@@ -1060,7 +1060,7 @@ SkinnedMeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013617412194}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
