@@ -35,18 +35,18 @@ namespace UTJ
             }
         }
 
-        void RandomizeHairParameters(HairInstance hair)
+        public void RandomizeHairParameters(HairInstance hair)
         {
             float Hue = Random.Range(0.0f, 1.0f);
-            hair.m_params.m_rootColor = Color.HSVToRGB(Hue, 1, 1);//Random.ColorHSV(0.0f, 0.5f, 1.0f, 1.0f, 1.0f, 1.0f);
+            hair.m_params.m_rootColor = Color.HSVToRGB(Hue, 1, 0.8f);//Random.ColorHSV(0.0f, 0.5f, 1.0f, 1.0f, 1.0f, 1.0f);
             Hue += 0.5f;
             Hue = 1.0f - Hue;
-            hair.m_params.m_tipColor = Color.HSVToRGB(Hue, 1, 1);
+            hair.m_params.m_tipColor = Color.HSVToRGB(1, 1, 1);
             //hair.m_params.m_lengthScale = Random.Range(0.2f, 0.2f);
             //hair.m_params.m_widthRootScale = Random.Range(0.01f, 4.0f);
-            hair.m_params.m_widthTipScale = Random.Range(0.0f, 2.0f);
+            hair.m_params.m_widthTipScale = Random.Range(0.0f, 0.5f);
             hair.m_params.m_rootStiffness = Random.Range(0.0f, 4.0f);
-            hair.m_params.m_specularPrimary = Random.Range(0.0f, 1.0f);
+            hair.m_params.m_specularPrimary = Random.Range(0.5f, 1.0f);
             hair.m_params.m_density = Random.Range(0.1f, 0.2f);
             //hair.m_params.m_lengthScale = Random.Range(0.0f, 10.0f);
             //hair.m_params.m_waveScale = Random.Range(0.0f, 2.0f);

@@ -124,9 +124,9 @@ MonoBehaviour:
   computeUserMap: 3
   computeColorMap: 0
   computeInfraredMap: 0
-  displayUserMap: 1
-  displayColorMap: 1
-  displaySkeletonLines: 1
+  displayUserMap: 0
+  displayColorMap: 0
+  displaySkeletonLines: 0
   DisplayMapsWidthPercent: 20
   useMultiSourceReader: 0
   minUserDistance: 0.5
@@ -266,6 +266,7 @@ GameObject:
   - 4: {fileID: 1438722264}
   - 114: {fileID: 1438722263}
   - 114: {fileID: 1438722262}
+  - 114: {fileID: 1438722265}
   m_Layer: 0
   m_Name: Audio Input
   m_TagString: Untagged
@@ -290,7 +291,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1438722261}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13ceae187019f49448b67c820680ce6e, type: 3}
   m_Name: 
@@ -311,6 +312,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1438722265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438722261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f700bec924ffa8742977872a914fe197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beat: 0
 --- !u!1 &1689020876
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +485,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2016573872}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 12.7, z: 26.39}
+  m_LocalPosition: {x: 0, y: 12.7, z: 36.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children: []

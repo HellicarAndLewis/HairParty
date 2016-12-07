@@ -838,8 +838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42334e0cef13c7640be7e216e37af951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fft: {fileID: 0}
+  beat: {fileID: 0}
   hair: {fileID: 114000011607010210}
+  tracker: {fileID: 0}
+  sensitivity: 0
 --- !u!114 &114000011125697040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -856,7 +858,7 @@ MonoBehaviour:
   verticalMovement: 1
   externalRootMotion: 0
   fingerOrientations: 0
-  moveRate: {x: 1, y: 1, z: 1}
+  moveRate: {x: 10, y: 20, z: 0}
   smoothFactor: 5
   offsetNode: {fileID: 0}
   posRelativeToCamera: {fileID: 0}
