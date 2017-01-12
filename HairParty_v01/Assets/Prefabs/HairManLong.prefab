@@ -858,7 +858,7 @@ MonoBehaviour:
   verticalMovement: 1
   externalRootMotion: 0
   fingerOrientations: 0
-  moveRate: {x: 10, y: 20, z: 0}
+  moveRate: {x: 10, y: 10, z: 0}
   smoothFactor: 5
   offsetNode: {fileID: 0}
   posRelativeToCamera: {fileID: 0}
@@ -955,7 +955,7 @@ MonoBehaviour:
     m_stiffnessStrength: 1
     m_stiffnessDamping: 0
     m_tipStiffness: 0
-    m_useCollision: 0
+    m_useCollision: 1
     m_wind: {x: 0, y: 0, z: 0}
     m_windNoise: 0
     m_stiffnessCurve: {x: 1, y: 1, z: 1, w: 1}

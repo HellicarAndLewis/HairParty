@@ -69,10 +69,10 @@ public class OSCHandler : MonoBehaviour
 		{
 	        if (_instance == null) 
 			{
-				_instance = new GameObject ("OSCHandler").AddComponent<OSCHandler>();
-	        }
-	       
-	        return _instance;
+                _instance = new GameObject ("OSCHandler").AddComponent<OSCHandler>();
+            }
+
+            return _instance;
 	    }
 	}
 	#endregion
@@ -211,22 +211,23 @@ public class OSCHandler : MonoBehaviour
 
     void OnPacketReceived(OSCServer server, OSCPacket packet)
     {
+        //Debug.Log("Recieved Packet in Handler!");
     }
-	
-	/// <summary>
-	/// Sends an OSC message to a specified client, given its clientId (defined at the OSC client construction),
-	/// OSC address and a single value. Also updates the client log.
-	/// </summary>
-	/// <param name="clientId">
-	/// A <see cref="System.String"/>
-	/// </param>
-	/// <param name="address">
-	/// A <see cref="System.String"/>
-	/// </param>
-	/// <param name="value">
-	/// A <see cref="T"/>
-	/// </param>
-	public void SendMessageToClient<T>(string clientId, string address, T value)
+
+    /// <summary>
+    /// Sends an OSC message to a specified client, given its clientId (defined at the OSC client construction),
+    /// OSC address and a single value. Also updates the client log.
+    /// </summary>
+    /// <param name="clientId">
+    /// A <see cref="System.String"/>
+    /// </param>
+    /// <param name="address">
+    /// A <see cref="System.String"/>
+    /// </param>
+    /// <param name="value">
+    /// A <see cref="T"/>
+    /// </param>
+    public void SendMessageToClient<T>(string clientId, string address, T value)
 	{
 		List<object> temp = new List<object>();
 		temp.Add(value);
@@ -307,7 +308,7 @@ public class OSCHandler : MonoBehaviour
 						
 				if(_servers[pair.Key].server.LastReceivedPacket.TimeStamp
 				   != _servers[pair.Key].packets[_servers[pair.Key].packets.Count - 1].TimeStamp)
-				{	
+				{
 					if(_servers[pair.Key].log.Count > _loglength - 1)
 					{
 						_servers[pair.Key].log.RemoveAt(0);
@@ -320,8 +321,10 @@ public class OSCHandler : MonoBehaviour
 					                                         FormatMilliseconds(DateTime.Now.Millisecond)," : ",
 					                                         _servers[pair.Key].server.LastReceivedPacket.Address," ",
 					                                         DataToString(_servers[pair.Key].server.LastReceivedPacket.Data)));
-				}
-			}
+
+                    gameObject.SendMessage("OnRecieved", 1.0f);
+                }
+            }
 		}
 	}
 	

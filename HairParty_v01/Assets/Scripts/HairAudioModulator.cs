@@ -40,7 +40,7 @@ namespace UTJ
                 if(beat.beat > 1.0f - sensitivity)
                 {
                     numBeats++;
-                    if (numBeats == 16)
+                    if (numBeats >= 32)
                     {
                         tracker.RandomizeHairParameters(hair);
                         numBeats = 0;

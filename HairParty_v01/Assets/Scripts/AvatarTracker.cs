@@ -69,7 +69,7 @@ namespace UTJ
                 int prefabIndex = Random.Range(0, avatarsLibrary.Length);
                 GameObject obj = Instantiate(avatarsLibrary[prefabIndex]);
 
-                Debug.Log("Just found a user! instantiating her with uder index: " + uidIndex);
+                Debug.Log("Just found a user! instantiating her with user index: " + uidIndex);
                 AvatarController controller = obj.GetComponent<AvatarController>();
 
                 controller.playerIndex = uidIndex;

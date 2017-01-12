@@ -15,20 +15,24 @@ public class fftAnalyzer : MonoBehaviour
     private float average;
     private float peak;
     private Dictionary<string, ServerLog> servers;
+    public OSCHandler oscHandler;
 
     // --------------------------------------------------------------------------------------------------------
     //
     void Start()
     {
         spectrum = new float[samples];
-        OSCHandler.Instance.Init();
+        if (oscHandler == null)
+            oscHandler = GetComponent<OSCHandler>();
+
+        oscHandler.Init();
     }
 
     // --------------------------------------------------------------------------------------------------------
     //
     void Update()
     {
-        OSCHandler.Instance.UpdateLogs();
+        oscHandler.UpdateLogs();
         servers = OSCHandler.Instance.Servers;
         var packets = servers["fftInput"].packets;
 
