@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 [ExecuteInEditMode]
 [RequireComponent(typeof(Camera))]
@@ -14,10 +15,68 @@ public class PashaMan : SceneViewFilter
 
     public KinectManager kinect;
 
+    struct kinectJointPositions
+    {
+        public KinectManager kinect;
+        public Vector4[] joints;
+        public int userIndex;
+
+        // Joints
+        // Spinebase        - 0
+        // SpineMid         - 1
+        // Neck             - 2
+        // Head             - 3
+        // ShoulderLeft     - 4
+        // ElbowLeft        - 5
+        // WristLeft        - 6
+        // HandLeft         - 7
+        // ShoulderRight    - 8
+        // ElbowRight       - 9
+        // WristRight       - 10
+        // HandRight        - 11
+        // HipLeft          - 12
+        // KneeLeft         - 13
+        // AnkleLeft        - 14
+        // FootLeft         - 15
+        // HipRight         - 16
+        // KneeRight        - 17
+        // AnkleRight       - 18
+        // FootRight        - 19
+        // SpineShoulders   - 20
+        // HandTipLeft      - 21
+        // ThumbLeft        - 22
+        // HandTipRight     - 23
+        // ThumbRight       - 24
+
+        public void setup(int _index, KinectManager _kinect)
+        {
+            joints = new Vector4[25];
+            userIndex = _index;
+            kinect = _kinect;
+        }
+        public void update()
+        {
+            long userID = kinect.GetUserIdByIndex(0);
+            // 25 joints
+            for (int i = 0; i < 25; i++)
+            {
+                joints[i] = Vector3.Lerp( joints[i], kinect.GetJointPosition(userID, i), 0.5f);
+            }
+        }
+    }
+
+    private kinectJointPositions jointPositions;
+
     public void Start()
     {
         if (kinect == null)
             kinect = FindObjectOfType<KinectManager>();
+
+        if(kinect != null)
+        {
+            jointPositions.setup(0, kinect);
+        }
+
     }
 
     public Material EffectMaterial
@@ -131,6 +190,8 @@ public class PashaMan : SceneViewFilter
             return;
         }
 
+        jointPositions.update();
+
         int leftHandIndex = kinect.GetJointIndex(KinectInterop.JointType.HandLeft);
         int rightHandIndex = kinect.GetJointIndex(KinectInterop.JointType.HandRight);
         long userId = kinect.GetUserIdByIndex(0);
@@ -143,8 +204,9 @@ public class PashaMan : SceneViewFilter
         EffectMaterial.SetMatrix("_CameraInvViewMatrix", CurrentCamera.cameraToWorldMatrix);
         EffectMaterial.SetVector("_CameraWS", CurrentCamera.transform.position);
         EffectMaterial.SetTexture("_CubeMap", cubeMap);
-        EffectMaterial.SetVector("_LeftHand", leftHandPosition);
-        EffectMaterial.SetVector("_RightHand", rightHandPosition);
+        EffectMaterial.SetVectorArray("_Joints", jointPositions.joints);
+        //EffectMaterial.SetVector("_LeftHand", leftHandPosition);
+        //EffectMaterial.SetVector("_RightHand", rightHandPosition);
 
 
         CustomGraphicsBlit(source, destination, EffectMaterial, 0); // use given effect shader as image effect

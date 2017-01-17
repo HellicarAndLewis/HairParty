@@ -40,8 +40,7 @@
 			uniform float4x4 _CameraInvViewMatrix;
 			uniform float3 _CameraWS;
 
-			uniform float3 _LeftHand;
-			uniform float3 _RightHand;
+			uniform float4 _Joints[25];
 
 			// Input to vertex shader
 			struct appdata
@@ -233,6 +232,12 @@
 				return distance(p, _Centre) - r;
 			}
 
+			float plane(float3 p, float4 n) {
+				// n must be normalized
+				float4 norm = normalize(n);
+				return dot(p, n.xyz) + n.w;
+			}
+
 			//meta balls merging function
 			float smin(float a, float b, float k)
 			{
@@ -242,8 +247,11 @@
 
 
 			float map(float3 pos) {
-				float t1 = sphere(pos + _LeftHand * 5.0 + float3(0.0, 0.0, 10.0), 1.0);//dodecahedron(pos + _TargetVector, 0.5);
-				t1 = smin(t1, sphere(pos + _RightHand * 5.0 + float3(0.0, 0.0, 10.0), 1.0), 5.0);
+				float t1 = sphere(pos - _Joints[0].xyz * 5.0 + float3(0.0, 5.0, -10.0), 1.0);//dodecahedron(pos + _TargetVector, 0.5);
+				t1 = smin(t1, plane(pos - _Joints[15].xyz * 5.0 + float3(0.0, 5.0, -10.0), float4(0.0, 1.0, 0.0, 0.0)), 5.0);
+				for (int i = 1; i < 21; i++) {
+					t1 = smin(t1, sphere(pos - _Joints[i].xyz * 5.0 + float3(0.0, 5.0, -10.0), 1.0), 5.0);
+				}
 				return t1;
 			}
 
